@@ -1,0 +1,401 @@
+@font-face {
+  font-family: "Socialico";
+  src: url("Socialico.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Socialico-Plus";
+  src: url("Socialico-Plus.woff") format("woff");
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;  
+}
+
+body, html {
+  height: 100%;  
+}
+
+body {
+  font: 100%/1.4em Trirong, serif;  
+  letter-spacing: 1px;  
+  color: #8d8a74;
+  background-color: #f4f1e9;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  height: 100%;  
+  background: url(images/mobile-bg.jpg) center no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+}
+
+div.content-2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.big-text {
+  font: bold 2.8em/1.4em Trirong, serif;  
+  letter-spacing: 3px;  
+}
+
+h2 {
+  font-size: 1.1em;  
+}
+
+.top-bar {
+  width: 100%;
+  position: absolute;
+  top: 30px;  
+  display: flex;
+  justify-content: center;  
+}
+
+.branding {
+  display: flex;  
+  color: #BA6F4D;
+}
+
+.branding p {
+  padding-top: 10px;
+  margin-left: -10px;
+}
+
+.branding img {  
+  width: 60%;  
+}
+
+.branding .home {
+  transition: transform 0.4s;
+}
+
+.branding .home:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.top-links {
+  position: fixed;
+  z-index: 3;  
+  top: 40px;
+  left: 30px;
+  color: #BA6F4D;
+  transition: color 0.4s;  
+}
+
+.top-links ul {
+  list-style-type:none;
+}
+
+ul.menu a, ul.menu a:visited {
+  display: block;
+  text-decoration:none;
+  color:#fff;
+  background-color:#BA6F4D;
+  padding:10px;  
+  font-size:0.85em;
+  transition: background-color 0.4s;
+}
+
+ul.menu a:hover {
+  color: #fff;
+  background-color: #8d8a74;  
+}
+
+ul.menu {
+  display: none;
+}
+
+.top-links:hover {
+  cursor: pointer;
+  color: #8d8a74;
+}
+
+.top-links:hover .menu {
+  display: block;
+}
+
+.content {  
+  width: 80%;
+  padding: 80px 0;
+  margin: 0 auto;
+  background-color: #F4F1E9;
+}
+
+.content h1 {
+  text-align: center;
+  line-height: 1.2em;
+  width: 100%;
+  margin: 0 0 60px 0;
+}
+
+.tea-about {  
+  max-width: 336px;
+  margin: auto;
+  padding: 0 5% 20% 5%;
+}
+
+.tea-about:last-of-type {
+  padding-bottom: 0;
+}
+
+.tea-about img {
+  max-width: 80%;
+  margin: auto;   
+  border: 6px solid #BA6F4D;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.tea-about h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.how-to-grow {
+  height:100%;
+  background: url(images/how-to-bg2.jpg) no-repeat center;
+  background-size: cover;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.how-to-grow p {
+  color:#fff;
+}
+
+.how-to-link {
+  text-align: center;
+  text-decoration: none;
+  max-width: 360px;
+  display: block;
+  margin: 30px auto 0 auto;
+  font: 0.8em/1.5em Trirong, serif;  
+  letter-spacing: 1px;  
+  padding: 15px;
+  color: #fff;
+  background-color: #BA6F4D;  
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.4s;
+}
+
+.how-to-link:hover {
+  cursor: pointer;  
+  background-color: #8d8a74;  
+}
+
+.recipes-about {
+  max-width: 342px;
+  height: 180px;  
+  margin: 0 auto 8% auto;
+  text-align: center;
+  position: relative;
+}  
+
+.r-1 {
+  background: url(images/recipe-1.jpg) no-repeat center; 
+  background-size: cover;    
+}
+
+.r-2 {
+  background: url(images/recipe-2.jpg) no-repeat center; 
+}
+
+.r-3 {
+  background: url(images/recipe-3.jpg) no-repeat center; 
+}
+
+.r-4 {
+  background: url(images/recipe-2.jpg) no-repeat center; 
+  margin-bottom: 0;
+}
+
+.recipes-about a, .recipes-about a:visited {
+  display: inline-block;
+  position: absolute;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-decoration: none;
+  text-shadow: 5px 3px 2px rgba(0,0,0,1);
+  color: #f4f1e9;
+  transition: letter-spacing 0.4s;   
+}
+
+.recipes-about a:hover {
+  letter-spacing: 1.7px;
+}
+
+footer {
+  background-color: #BA6F4D;
+  color: #f4f1e9;   
+  padding: 3% 10%;
+  text-align: center;
+}
+
+.social-media a, .social-media a:visited {
+  font: 2.5em Socialico;  
+  display: inline-block;
+  text-decoration: none;
+  color: #f4f1e9;
+  margin-bottom: 15px;
+  padding-right: 5px;
+}
+
+a.instagram {
+  font: 2.5em Socialico-Plus;
+}
+
+.social-media a:hover {
+  color: #DEDAC8;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+footer address {
+  font-size: 0.8em;  
+}
+
+@media only screen and (min-width: 400px) {
+  header {
+    background: url(images/tablet-bg.jpg) center no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .big-text {
+    max-width: 331px;
+    margin: auto
+  }  
+}
+
+@media only screen and (min-width: 626px) {
+  .big-text {
+    max-width: 460px;
+    margin: auto;
+    font: bold 3.2em/1.6em Trirong, serif;    
+  }  
+}
+
+  @media only screen and (min-width: 780px) {
+    header {
+      background: url(images/header-bg.jpg) center no-repeat;
+      background-position: bottom right;
+      background-size: cover;
+    }
+
+    .top-bar {
+      justify-content: space-around;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .top-links {
+      position: initial;
+    }
+
+    .top-links:hover .menu {
+      display: flex;
+    }
+
+    i.material-icons {
+      display: none;
+    }
+
+    ul.menu {
+      display: flex;
+    }
+
+    ul.menu a, ul.menu a:visited {      
+      color: #8d8a74;
+      background-color: initial;
+      font-weight: 500;
+    }
+
+    ul.menu a:hover {    
+      color: #BA6F4D;
+      background-color: initial;
+      border-bottom: 2px solid #BA6F4D;
+    }
+
+    .big-text {
+      max-width: 80%;
+    }
+
+    div.tea-about-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }  
+
+    .tea-about {
+      margin: 0;
+      padding-bottom: 15%;
+    }
+
+    div.recipes-container {
+      max-width: 737px;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;      
+      }
+
+    .recipes-about {
+      width: 342px;
+      margin: 0 auto 25px auto;
+    }
+}
+
+@media only screen and (min-width: 928px) {
+  html {
+    background-color: #8d8a74;
+  }
+
+  body {
+    max-width: 2000px;
+    margin: auto;
+  }
+
+  .big-text {
+    max-width: 70%;
+    font: bold 4em/1.8em Trirong, serif;
+  }
+
+  .content {
+    width: 100%;      
+    margin: 0 auto;    
+  }
+
+  .tea-about img {
+    max-width: 100%;
+  }  
+}
+
+@media only screen and (min-width: 1008px) {
+  .tea-about {
+    padding: 15px 45px;
+  }  
+}
